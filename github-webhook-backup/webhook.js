@@ -5,7 +5,7 @@ const http = require('http');
 const crypto = require('crypto');
 const exec = require('child_process').exec;
 
-const PM2_CMD = 'cd ~ && pm2 startOrRestart ecosystem.config.js';
+const PM2_CMD = 'cd ~/dimeloper-strapi && NODE_ENV=production yarn build && cd ~ && pm2 startOrRestart ecosystem.config.js';
 
 http
 .createServer(function(req, res) {
