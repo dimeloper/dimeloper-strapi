@@ -40,6 +40,9 @@
       "relation": "oneToMany",
       "target": "api::category.category",
       "mappedBy": "article"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
