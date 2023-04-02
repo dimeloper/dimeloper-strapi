@@ -15,15 +15,15 @@
     "name": {
       "type": "string"
     },
-    "article": {
+    "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "categories"
     },
-    "faq": {
+    "faqs": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::faq.faq",
       "inversedBy": "categories"
     },

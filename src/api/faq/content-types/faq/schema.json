@@ -18,14 +18,14 @@
     "answer": {
       "type": "richtext"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "faq"
-    },
     "slug": {
       "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "faqs"
     }
   }
 }

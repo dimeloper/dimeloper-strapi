@@ -35,14 +35,14 @@
     "og_keywords": {
       "type": "text"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "article"
-    },
     "slug": {
       "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "articles"
     }
   }
 }
