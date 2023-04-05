@@ -1,12 +1,12 @@
+// replace content of config/database.ts with this
+// and run yarn develop
+import path from 'path';
+
 export default ({ env }) => ({
   connection: {
-    client: 'postgres',
+    client: 'sqlite',
     connection: {
-      host: env('DATABASE_HOST', '127.0.0.1'),
-      port: env.int('DATABASE_PORT', 5432),
-      database: env('DATABASE_NAME', 'strapidb'),
-      user: env('DATABASE_USERNAME', ''),
-      password: env('DATABASE_PASSWORD', ''),
+      filename: path.join(__dirname, '..', '..', env('DATABASE_FILENAME', '.tmp/data.db')),
     },
     useNullAsDefault: true,
   },
