@@ -2,7 +2,7 @@
   "name": "dimeloper-strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Dimeloper CMS built on Strapi v4",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,15 +11,15 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.11.4",
-    "@strapi/plugin-users-permissions": "4.11.4",
-    "@strapi/provider-upload-aws-s3": "^4.11.4",
-    "@strapi/strapi": "4.11.4",
+    "@strapi/plugin-i18n": "4.14.2",
+    "@strapi/plugin-users-permissions": "4.14.2",
+    "@strapi/provider-upload-aws-s3": "^4.14.2",
+    "@strapi/strapi": "4.14.2",
     "better-sqlite3": "^8.4.0",
     "pg": "^8.11.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Dimitris Kiriakakis"
   },
   "strapi": {
     "uuid": "720f34cf-fd3f-4d46-b881-55fbd83c491a"
