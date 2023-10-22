@@ -700,6 +700,8 @@ export interface ApiArticleArticle extends Schema.CollectionType {
       'manyToMany',
       'api::category.category'
     >;
+    readingTime: Attribute.String;
+    excerpt: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

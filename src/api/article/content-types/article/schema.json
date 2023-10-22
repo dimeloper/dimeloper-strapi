@@ -43,6 +43,12 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "articles"
+    },
+    "readingTime": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
     }
   }
 }
