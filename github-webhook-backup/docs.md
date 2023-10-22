@@ -111,7 +111,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-Enable and start the new service so it starts when the system boots:
+Enable and start the new service, so it starts when the system boots:
 - `sudo systemctl enable webhook.service`
 - `sudo systemctl start webhook`
 
