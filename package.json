@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Dimeloper CMS built on Strapi v4",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
